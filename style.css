@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#111827,#312e81);
+    color:white;
+    text-align:center;
+}
+
+/* HEADING */
+
+h1{
+    padding:1.5rem;
+    font-size:3rem;
+    background:rgba(255,255,255,0.08);
+    box-shadow:0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* MESSAGE */
+
+.msg-container{
+    margin-top:2rem;
+}
+
+#msg{
+    display:inline-block;
+    background:black;
+    padding:1rem 2rem;
+    border-radius:15px;
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+/* CHOICES */
+
+.choices{
+    display:flex;
+    justify-content:center;
+    gap:3rem;
+    margin-top:3rem;
+    flex-wrap:wrap;
+}
+
+/* CARD */
+
+.choice{
+    background:rgba(255,255,255,0.08);
+    width:250px;
+    padding:1.5rem;
+    border-radius:20px;
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.choice:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px #38bdf8,
+    0 0 40px rgba(56,189,248,0.5);
+}
+
+/* IMAGE */
+
+.choice img{
+    width:170px;
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #38bdf8;
+}
+
+/* TEXT */
+
+.choice p{
+    margin-top:1rem;
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+/* SCORE */
+
+.score-board{
+    display:flex;
+    justify-content:center;
+    gap:4rem;
+
+    margin-top:4rem;
+}
+
+.score{
+    background:rgba(255,255,255,0.08);
+
+    padding:2rem;
+
+    border-radius:20px;
+
+    width:180px;
+}
+
+#user-score,
+#comp-score{
+    font-size:5rem;
+    color:#38bdf8;
+    font-weight:700;
+}
